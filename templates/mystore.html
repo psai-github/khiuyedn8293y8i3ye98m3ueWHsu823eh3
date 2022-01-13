@@ -1,0 +1,59 @@
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="container">
+ 
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+
+			<!-- Wrapper for carousel items -->
+      {%for item in items%}
+
+
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper"  style="display: inline-block;" >
+								<div class="img-box">
+									<img id="{{item.id}}" src="{{item.img}}" class="img-responsive" alt="">
+								</div>
+                
+								<div class="thumb-content">
+                  
+
+
+									<p class="item-price"><span>{{item.price}}</span></p>
+									<a style="background-color: green;"class="btn btn-primary" href="edit_check">Edit</a>
+									<a style="background-color: red;"class="btn btn-primary" href="delete_item.html">Delete</a>
+
+                  
+								</div>
+                			
+							</div>
+              
+						</div>
+             
+            <div class="w3-container" id="disdiv" style="display: inline-block;">
+
+
+              <div class="w3-panel w3-grey" >
+                <h1>{{item.title}} ID: {{item.id}}</h1>
+                <br>
+                <p>{{item.dis}}</p>
+                <p>This product was added by {{item.author}} on {{item.date_posted}}</p>
+              </div>
+            
+            </div>
+					
+						
+					</div>
+          {%endfor%}		
+        </div>
+        </div>
+
+				</div>
+    </div>
+</div>

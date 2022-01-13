@@ -1,0 +1,517 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="{{url_for('static', filename='index.js')}}"></script>
+<link rel="shortcut icon" type="image/x-icon" href="mm.png"/>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+<link rel="javascript" href="index.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+   
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="mm.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exsell</title>
+</head>
+<body>
+  
+</body>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<script>
+
+ function cart(){
+  document.getElementById("myDIV").scrollIntoView();
+ }
+
+</script>
+<div style="background:lightgray;"class="topnav">
+  <a style="color:grey;background:black;"class="active" href="/"><strong><b>Exsell</b></strong></a>
+  <a></a>
+  <a></a>
+  <a href=""></a>
+  <a href=""></a>
+  <a href=""></a>
+  <a href=""></a>
+  <div style="color:black;" class="header-right">
+    <button onclick="cart()"><img src="data:image/png;base64,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" width=50></button>
+    
+  </div>
+  <div class="search-container">
+    <form id="example"class="example" action="">
+      <input placeholder="Search Stores.." type="text" id="s">
+      <button  onclick="change()"><i onclick="change()" class="fa fa-search"></i></button>
+    </form>
+    
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+</style>
+</head>
+<body>
+
+<div id="mySidebar1" class="sidebar1">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+  <h2><bold>Settings:</bold><h2>
+  <a href="#">Settings</a>
+
+  <a href="https://www.pranavsai.ml/about.html">About Us</a>
+  
+  <button onclick="dark()">Dark Mode</button>
+  <br>
+  <button onclick="light()">Light Mode</button>
+</div>
+
+<script>
+function search(){
+  alert("Started");
+  
+}
+function dark(){
+  document.body.style.background = "black";
+}
+function light(){
+  document.body.style.background = "white";
+}
+function openNav1() {
+  document.getElementById("mySidebar1").style.width = "250px";
+  document.getElementById("main1").style.marginLeft = "250px";
+}
+
+function closeNav1() {
+  document.getElementById("mySidebar1").style.width = "0";
+  document.getElementById("main1").style.marginLeft= "0";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<title>
+		Exsell
+	</title>
+
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+
+
+</head>
+<body>
+
+<div style="color:grey;"class="topnav" id="myTopnav">
+  <button class="openbtn1" onclick="openNav1()"><strong>☰ All<strong></button>
+    <a href="signup">Sign Up</a>
+    <a href="signin">Sign In</a>
+    <a href="/books"><small>Books</small></a>
+    <a href="/notes" ><small>Notes</small></a>
+    <a href="/tech"><small>Tech</small></a>
+    <a href="/clothing"><small>Clothing</small></a>
+    <a href="/ss"><small>School-Supplies</small></a>
+    <a href="" ><small>Best-Sellers</small></a>
+    <a href="/sports"><small>Sports</small></a>
+    <a href="/toys"><small>Toys</small></a>
+
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  
+
+</div>
+</body>
+
+
+
+
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<script>
+
+</script>
+
+<div class="container">
+ 
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+
+			<!-- Wrapper for carousel items -->
+     
+
+
+			<div class="carousel-inner">
+				<div class="item active">
+          {%for item in items%}
+					<div class="row">
+						<div class="col-sm-3">
+              
+							<div class="thumb-wrapper"  style="display: inline-block;" >
+								<div class="img-box">
+									<img src="{{item.img}}" class="img-responsive" alt="">
+								</div>
+                
+								<div class="thumb-content">
+                  
+
+                  
+									<p class="item-price"><span>{{item.price}}</span></p>
+                  
+									<a class="btn btn-primary" id="{{item.id}}" onclick="details()">Details</a>
+
+                  
+								</div>
+                			
+							</div>
+              
+						</div>
+            
+          {%endfor%}		
+        </div>
+        </div>
+
+				</div>
+    </div>
+</div>
+ 
+</body>
+</html>                                		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+
+
+<script>
+
+
+</script>
+        
+
+<script>
+
+  
+  
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("img");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  
+  
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  //
+  var close1 = document.getElementsByClassName("close1");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+  
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var img=document.createElement("img");
+    var inputValue = document.getElementById("myInput").value;
+    //alert(document.getElementById(inputValue).src);
+    img.src=document.getElementById(inputValue).src;
+    img.width="100";
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    li.appendChild(img);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+  
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function change(){
+  if(document.getElementById("s").value==""){
+    confirm("Please Type Something...");
+  }
+  else{
+ 	  document.getElementById("example").action="search/"+document.getElementById("s").value;
+ }}
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

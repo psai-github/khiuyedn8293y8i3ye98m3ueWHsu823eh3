@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<table id="customers">
+  <tr>
+    <th>Item</th>
+    <th>Buyer</th>
+    <th>Seller</th>
+    <th>Price</th>
+    <th>Date</th>
+  </tr>
+  {%for i in transactions%}
+  <tr>
+
+  <td>i.title</td>
+  <td>users.query.filter_by(id=i.buyer_id).all()[0].username</td>
+  <td>users.query.filter_by(id=i.seller_id).all()[0].username</td>
+  <td>i.price</td>
+  <td>i.tran_date</td>
+
+  </tr>
+  {%endfor%}
+</table>
+
+</body>
+</html>
+
+
